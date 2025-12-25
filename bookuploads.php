@@ -3,7 +3,8 @@
 Plugin Name: Book Uploads manager
 Description: A plugin to allow users to upload their books and store data in a custom table.
 Version: 1.0
-Author: TAS
+Author: AnkushShinari
+Created For: TAS
 */
 
 // Exit if accessed directly
@@ -87,4 +88,5 @@ function bookuploads_display_upload_form() {
     include(plugin_dir_path(__FILE__) . 'templates/book-upload-form.php');
     return ob_get_clean();
 }
+
 add_shortcode('book_upload_form', 'bookuploads_display_upload_form');
